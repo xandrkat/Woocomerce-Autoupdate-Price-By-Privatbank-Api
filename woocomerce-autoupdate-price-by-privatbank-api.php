@@ -1,15 +1,14 @@
 <?php
 /**
- * @package Woocomerce Autoupdate Price By Privatbank Api
- * @version 1.0.0
+ * Plugin Name: Woocomerce Autoupdate Price By Privatbank Api
+ * Plugin URI:  https://github.com/xandrkat/Woocomerce-Autoupdate-Price-By-Privatbank-Api
+ * Description: Обновление цены на сайте по Api Privatbank.
+ * Version:     1.0.0
+ * Author:      Alexandr Katrazhenko
+ * Author URI:  https://katrazhenko.biz.ua/
+ * License:     GPL3
  */
-/*
-Plugin Name: Woocomerce Autoupdate Price By Privatbank Api
-Description: Обновление цены на сайте по Api Privatbank.
-Author: Alexandr Katrazhenko
-Version: 1.0.0
-Author URI: https://katrazhenko.biz.ua/
-*/
+
 if (!defined('ABSPATH')) { exit;}
 
 	add_filter( 'woocommerce_get_price',                      'get_change_price', PHP_INT_MAX - 100, 2 ); 
